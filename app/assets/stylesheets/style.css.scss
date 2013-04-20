@@ -4,13 +4,15 @@ $baseFontFamily:Oxygen;
 @import 'bootstrap';
 body {
 	padding-top: 60px;
+	padding-bottom: 70px;
 }
 @import 'bootstrap-responsive';
 
 .footer {
-	margin-top: 50px;
-	color: $grayLight;
+	margin-top: 10px;
+	/*color: $grayLight;
 	a {
 		color: $gray;
-	}
+	}*/
+
 }
