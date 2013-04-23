@@ -1,16 +1,24 @@
-<div class="hero-unit">
+	<div class="hero-unit">
 
-		<h1>You can create magic here!!</h1>
+		<h1>This is where Admin creates magic !!</h1>
 		<p>
 		  You've come to the page for 
 		  <%= link_to "Microsoft", "http://Microsoft.com" %>
 		  <%= link_to "Windows", "http://Windows.Microsoft.com" %> SM Dashboard.
 		</
-		</p>
+		</p>		
+		<% if user_signed_in? %>
+		
 		<p>
 		 <%= link_to "Add a New User", new_user_registration_path , class: "btn btn-primary btn-large"
 		 # new_user_registration_path,
 		 %>
 		</p>
 
-</div>
+		<% else %>
+		<p>
+         <%= link_to "Login", new_user_session_path , class: "btn btn-large btn-primary" %>
+         </p>
+         
+         <% end %>
+	</div>

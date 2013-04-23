@@ -20,7 +20,7 @@ Omrails::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-# Need to update this
+# ### ----------> Need to update this on Heroku
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
